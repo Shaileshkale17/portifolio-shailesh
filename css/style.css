@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(---color-body-background);
+}
+
+section {
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+header {
+    min-width: 100vh;
+    background-color: var(---color-header);
+    padding: 10px 30px;
+    position: sticky;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .nav-img img {
+    width: 170px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(---color-text);
+    font-weight: 900;
+}
+
+#Home {
+    display: grid;
+}
+
+#Home .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.main-container .name-container {
+    /* padding-left: 20px; */
+    color: var(---color-text);
+}
+
+.main-container .name-container h3 {
+    font-size: small;
+}
+
+.main-container .name-container h1 {
+    padding-top: 10px;
+    font-size: 50px;
+}
+
+.main-container .name-container h2 {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.main-container .name-container .fa-github {
+    padding: 10px;
+    color: var(---color-github);
+    font-size: 30px;
+}
+
+.main-container .name-container .fa-linkedin-in {
+    padding: 10px;
+    color: var(---color-linkedin);
+    font-size: 30px;
+}
+
+.main-container .name-container .fa-x-twitter {
+    padding: 10px;
+    color: var(---color-twitter);
+    font-size: 30px;
+}
+.main-container .name-container  button{
+    margin: 10px;
+    padding: 10px;
+    background-color: var(---color-button);
+    color: var(---color-text);
+    border: 2px solid var(---color-text);
+}
+.main-container .name-container  button:hover{
+    border-radius: 10px;
+    
+}
+
+
+.main-container .image-container img {
+    width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 50%;
+    background-position-y: 20px;
+}
+
+/*! About */
+
+#About {
+    display: grid;
+    background-color: var(---color-about-background);
+}
+
+#About .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 70px;
+}
+
+.about-container .image-container img {
+    width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+    border-radius: 50%;
+    background-position-y: 20px;
+}
+.about-container .about-text h1 {
+    color: var(---color-text);
+    margin-bottom: 10px;
+}
+.about-container .about-text {
+    width: 80vh;
+    color: var(---color-text);
+    font-size: 25px;
+    text-align: justify;
+}
