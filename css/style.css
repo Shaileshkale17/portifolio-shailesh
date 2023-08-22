@@ -1,149 +1,276 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(---color-body-background);
+  background-color: var(---color-body-background);
 }
 
 section {
-    min-width: 100vh;
-    min-height: 100vh;
+  min-width: 100vh;
+  min-height: 100vh;
 }
 
 header {
-    min-width: 100vh;
-    background-color: var(---color-header);
-    padding: 10px 30px;
-    position: sticky;
+  min-width: 100vh;
+  background-color: var(---color-header);
+  padding: 10px 30px;
+  position: sticky;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav .nav-img img {
-    width: 170px;
+  width: 170px;
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
 }
 
 nav ul li {
-    list-style: none;
+  list-style: none;
 }
 
 nav ul li a {
-    text-decoration: none;
-    cursor: pointer;
-    color: var(---color-text);
-    font-weight: 900;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(---color-text);
+  font-weight: 900;
 }
 
 #Home {
-    display: grid;
+  display: grid;
 }
 
 #Home .main-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
 }
 
 .main-container .name-container {
-    /* padding-left: 20px; */
-    color: var(---color-text);
+  /* padding-left: 20px; */
+  color: var(---color-text);
 }
 
 .main-container .name-container h3 {
-    font-size: small;
+  font-size: small;
 }
 
 .main-container .name-container h1 {
-    padding-top: 10px;
-    font-size: 50px;
+  padding-top: 10px;
+  font-size: 50px;
 }
 
 .main-container .name-container h2 {
-    padding-top: 10px;
-    font-size: 30px;
+  padding-top: 10px;
+  font-size: 30px;
 }
 
 .main-container .name-container .fa-github {
-    padding: 10px;
-    color: var(---color-github);
-    font-size: 30px;
+  padding: 10px;
+  color: var(---color-github);
+  font-size: 30px;
 }
 
 .main-container .name-container .fa-linkedin-in {
-    padding: 10px;
-    color: var(---color-linkedin);
-    font-size: 30px;
+  padding: 10px;
+  color: var(---color-linkedin);
+  font-size: 30px;
 }
 
 .main-container .name-container .fa-x-twitter {
-    padding: 10px;
-    color: var(---color-twitter);
-    font-size: 30px;
+  padding: 10px;
+  color: var(---color-twitter);
+  font-size: 30px;
 }
-.main-container .name-container  button{
-    margin: 10px;
-    padding: 10px;
-    background-color: var(---color-button);
-    color: var(---color-text);
-    border: 2px solid var(---color-text);
+.main-container .name-container button {
+  margin: 10px;
+  padding: 10px;
+  background-color: var(---color-button);
+  color: var(---color-text);
+  border: 2px solid var(---color-text);
 }
-.main-container .name-container  button:hover{
-    border-radius: 10px;
-    
+.main-container .name-container button:hover {
+  border-radius: 10px;
 }
-
 
 .main-container .image-container img {
-    width: 40vh;
-    height: 40vh;
-    object-fit: cover;
-    border-radius: 50%;
-    background-position-y: 20px;
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 50%;
+  background-position-y: 20px;
 }
 
 /*! About */
 
 #About {
-    display: grid;
-    background-color: var(---color-about-background);
+  display: grid;
+  background-color: var(---color-about-background);
 }
 
 #About .about-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
 }
 
 .about-container .image-container img {
-    width: 40vh;
-    height: 40vh;
-    object-fit: cover;
-    border-radius: 50%;
-    background-position-y: 20px;
+  width: 40vh;
+  height: 40vh;
+  object-fit: cover;
+  border-radius: 50%;
+  background-position-y: 20px;
 }
 .about-container .about-text h1 {
-    color: var(---color-text);
-    margin-bottom: 10px;
+  color: var(---color-text);
+  margin-bottom: 10px;
 }
 .about-container .about-text {
-    width: 80vh;
-    color: var(---color-text);
-    font-size: 25px;
-    text-align: justify;
+  width: 80vh;
+  color: var(---color-text);
+  font-size: 25px;
+  text-align: justify;
+}
+
+/*! Experience */
+#Experience h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: var(---color-text);
+  font-size: 40px;
+}
+#Experience .box-main {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 8fr);
+}
+#Experience .box-main .box-sub-main {
+  margin: 20px;
+  background-color: azure;
+  padding: 50px;
+}
+#Experience .box-main .box-sub-main:hover {
+  /* this time not using of box hover adding the arrow sombol */
+}
+#Experience .box-main .box-sub-main h3 {
+  text-align: center;
+}
+#Experience .box-main .box-sub-main a {
+  text-align: center;
+  text-decoration: none;
+}
+#Experience .box-main .box-sub-main h5 {
+  margin-top: 15px;
+  text-align: center;
+}
+/* Command Language */
+#Command-Language {
+  background-color: var(---color-about-background);
+}
+#Command-Language h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: var(---color-text);
+  font-size: 40px;
+}
+#Command-Language .box-main {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 8fr);
+}
+#Command-Language .box-main .box-sub-main {
+  margin: 20px;
+  background-color: azure;
+  padding: 50px;
+}
+#Command-Language .box-main .box-sub-main:hover {
+  /* this time not using of box hover adding the arrow sombol */
+}
+#Command-Language .box-main .box-sub-main h3 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+#Command-Language .box-main .box-sub-main h3 img {
+  width: 50px;
+}
+/*! Contact */
+#Contact-section {
+  min-width: 100vh;
+  min-height: 50vh;
+}
+#Contact-section h1 {
+  padding-top: 20px;
+  text-align: center;
+  color: var(---color-text);
+  font-size: 40px;
+  margin-top: 227px;
+}
+#Contact-section .box-main {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+}
+#Contact-section .box-main .box-sub-main {
+  margin: 20px;
+  background-color: azure;
+  padding: 50px;
+}
+#Contact-section .box-main .box-sub-main:hover {
+  /* this time not using of box hover adding the arrow sombol */
+}
+#Contact-section .box-main .box-sub-main h3 {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 11px;
+}
+
+#Contact-section .box-main .box-sub-main a {
+  text-decoration: none;
+  color: black;
+}
+
+#Contact-section .box-main .box-sub-main .fa-envelope {
+  color: var(---color-github);
+  font-size: 30px;
+}
+
+#Contact-section .box-main .box-sub-main .fa-linkedin-in {
+  color: var(---color-linkedin);
+  font-size: 30px;
+}
+
+#Contact-section .box-main .box-sub-main .fa-instagram {
+  color: var(---color-instagram);
+  font-size: 30px;
+}
+
+/*! footer */
+
+footer p{
+  text-align: center;
+  color: var(---color-text);
 }
